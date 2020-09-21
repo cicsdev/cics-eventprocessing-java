@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:eventBinding CICSEPSchemaVersion="2" CICSEPSchemaRelease="0" xsi:schemaLocation="http://www.ibm.com/xmlns/prod/cics/eventprocessing/eventbinding CicsEventBinding.xsd " xmlns:ns2="http://www.ibm.com/xmlns/prod/cics/eventprocessing/eventbinding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description></description>
+    <userTag></userTag>
+    <eventSpecification>
+        <name>ACCOUNT</name>
+        <description></description>
+        <eventInformation/>
+    </eventSpecification>
+    <eventCaptureSpecification>
+        <name>ACCOUNT</name>
+        <eventIdentifier>ACCOUNT</eventIdentifier>
+        <description>Automatically generated capture specification for SIGNAL EVENT</description>
+        <filter>
+            <contextFilter>
+                <transactionId filterOperator="OFF" filterValue=""/>
+                <currentProgram filterOperator="OFF" filterValue=""/>
+                <userId filterOperator="OFF" filterValue=""/>
+                <CommandResp filterOperator="OFF" filterValue="OK"/>
+                <EIBAID filterOperator="OFF" value=""/>
+                <EIBCPOSN filterOperator="OFF" filterValue="1"/>
+            </contextFilter>
+            <locationFilter filterType="CICS_API">
+                <signalEventCommand verb="SIGNAL" adVerb="EVENT" isPre="false">
+                    <EVENT keyword="EVENT" filterOperator="EQ" filterValue="ACCOUNT"/>
+                    <FROMCHANNEL keyword="FROMCHANNEL" filterOperator="OFF" filterValue=""/>
+                </signalEventCommand>
+            </locationFilter>
+            <dataFilter/>
+        </filter>
+        <dataCapture/>
+    </eventCaptureSpecification>
+    <eventAdapterName>ACCOUNTADAPTER</eventAdapterName>
+</ns2:eventBinding>
