@@ -9,9 +9,9 @@
 		<artifactId>cics-eventprocessing-java</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>cics-eventprocessing-java-code</artifactId>
+	<artifactId>cics-eventprocessing-java-webapp</artifactId>
 	<packaging>war</packaging>
-	<name>cics-eventprocessing-java-code Maven Webapp</name>
+	<name>cics-eventprocessing-java - Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
@@ -35,7 +35,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>cics-eventprocessing-java-code</finalName>
+		<finalName>cics-eventprocessing-java-webapp</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

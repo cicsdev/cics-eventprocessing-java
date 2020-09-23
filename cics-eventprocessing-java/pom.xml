@@ -43,7 +43,7 @@
   
   <url>https://github.com/cicsdev/cics-eventprocessing-java</url>
   <modules>
-  	<module>cics-eventprocessing-java-code</module>
+  	<module>cics-eventprocessing-java-webapp</module>
   	<module>cics-eventprocessing-java-bundle</module>
   </modules>
 </project>
