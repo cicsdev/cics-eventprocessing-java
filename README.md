@@ -53,3 +53,8 @@ The Liberty JVM server will need the `cicsts:core-1.0`, `cicsts:link-1.0` and `s
    * Consumed event
 
 You can also emit an event using `EXEC CICS SIGNAL EVENT(EVENT)` either in another CICS program, or using the `CECI` transaction.
+
+
+## License
+This project is licensed under [Eclipse Public License - v 2.0](LICENSE). 
+
