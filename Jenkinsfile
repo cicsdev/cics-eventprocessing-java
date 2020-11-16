@@ -8,9 +8,9 @@ pipeline {
     }
     
     stages {
-		stage ("build") {
-        	steps {
-            	sh './cics-eventprocessing-java/gradlew clean build'
+        stage ("build") {
+            steps {
+                sh 'cd cics-eventprocessing-java && ./gradlew clean build'
             }
         }
     }
