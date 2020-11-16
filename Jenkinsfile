@@ -1,16 +1,14 @@
 pipeline {
     agent {
         docker {
-            image 'openjdk:11'
-            args  '-v /tmp:/tmp'
-            reuseNode true
+            image 'maven:3-alpine' 
+            args '-v /root/.m2:/root/.m2' 
         }
     }
-    
     stages {
-        stage ("build") {
+        stage('Build') { 
             steps {
-                sh 'cd cics-eventprocessing-java && ./gradlew clean build'
+                sh 'mvn -B -DskipTests clean package verify'
             }
         }
     }
