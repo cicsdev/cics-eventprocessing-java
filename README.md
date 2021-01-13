@@ -24,7 +24,25 @@ The CICS bundle contains several elements
 4. A WARBUNDLE containing the built Java WAR.
 
 ## Building
-*TODO*
+There are several ways to build this project. We suggest you build with a build toolkit such as Gradle or Maven:
+
+### Building with Gradle
+Run the following command from the `cics-eventprocessing-java` directory:
+
+```sh
+./gradlew assemble
+```
+
+This will compile the Java code, build a WAR file and package it and the EP adapter and Event binding into a CICS bundle as a ZIP file at `./cics-eventprocessing-java-bundle/build/distributions/cics-eventprocessing-java-bundle-0.0.1-SNAPSHOT.zip`
+
+### Building with Maven
+Run the following command from the `cics-eventprocessing-java` directory:
+
+```sh
+mvn verify
+```
+
+This will compile the Java code, build a WAR file and package it and the EP adapter and Event binding into a CICS bundle as a ZIP file at `.cics-eventprocessing-java-bundle/target/cics-eventprocessing-java-bundle-0.0.1-SNAPSHOT.zip`
 
 ## Configuration
 You'll need to define a Liberty JVM server with the name `DFHWLP`. This name can be modified in the `pom.xml` of the cics-eventprocessing-java-bundle module.
