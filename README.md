@@ -62,7 +62,15 @@ The Liberty JVM server will need the `cicsts:core-1.0`, `cicsts:link-1.0` and `s
 ```
 
 ## Deploying
-*TODO*
+1. Upload the built bumdle ZIP file to zFS on your z/OS system (using FTP or similar)
+2. Logon to zFS on your z/OS system (using SSH, OMVS or similar)
+3. Extract the ZIP file contents (e.g.: `unzip /path/to/bundle.zip`)
+4. On your CICS region, define a new `BUNDLE` resource with the `BUNDLEDIR` set to the extracted ZIP file contents
+5. Install the `BUNDLE` resource
+
+You can confirm the application has started by inquiring the state of the `BUNDLE` (using `CEMT INQUIRE BUNDLE` or similar SPI, or the CICS Explorer bundle view).
+
+A message will be written to the Liberty `messages.log` file to confirm the application has started, and the base URL for this application.
 
 ## Running
 1. Use a browser to target the address http://my.zos:9080/cics-eventprocessing-java-webapp/emit?name=EVENT replacing `my.zos` with the hostname of your z/OS system and `9080` with the port the Liberty JVM server is listening on.
