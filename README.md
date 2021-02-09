@@ -1,6 +1,14 @@
 # cics-eventprocessing-java
 
-Example code of how to use CICS event processing in the Java programming language
+This Java web application demonstrates how to emit and consume CICS events in Java using the JCICS API.
+
+## Requirements
+
+* CICS TS V5.3 or later
+* A configured Liberty JVM server
+* Java SE 1.8 or later on the z/OS system
+* Java SE 1.8 or later on the workstation
+* Either Gradle or Apache Maven on the workstation (optional if using Wrappers)
 
 ## Structure
 
@@ -22,9 +30,9 @@ The code is built into a WAR file, packaged into a CICS bundle, and deployed to 
 
 The CICS bundle contains the following elements:
 
-1. [`EVNT.transaction`](./cics-eventprocessing-java/cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/EVNT.transaction) - transaction which targets the `EVNTCONS` program
-2. [`ACCOUNTADAPTER.epadapter`](./cics-eventprocessing-java/cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event processing adapter which starts the `EVNT` transaction
-3. [`ACCOUNT.evbind`](./cics-eventprocessing-java/cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event binding which targets the `EVENTADAPTER` adpater
+1. [`EVNT.transaction`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/EVNT.transaction) - transaction which targets the `EVNTCONS` program
+2. [`ACCOUNTADAPTER.epadapter`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event processing adapter which starts the `EVNT` transaction
+3. [`ACCOUNT.evbind`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event binding which targets the `EVENTADAPTER` adpater
 4. `WARBUNDLE` - Java WAR bundle is added when built
 
 ## Building
