@@ -60,7 +60,7 @@ This will compile the Java code, build a WAR file and package it and the EP adap
 Run the following command from the `cics-eventprocessing-java` directory:
 
 ```sh
-mvn verify
+./mvnw verify
 ```
 
 This will compile the Java code, build a WAR file and package it and the EP adapter and Event binding into a CICS bundle as a ZIP file at `./cics-eventprocessing-java-bundle/target/cics-eventprocessing-java-bundle-0.0.1-SNAPSHOT.zip`
