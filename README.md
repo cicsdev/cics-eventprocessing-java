@@ -2,6 +2,12 @@
 
 This Java web application demonstrates how to emit and consume CICS events in Java using the JCICS API.
 
+## Overview
+
+This sample shows how to consume and emit CICS events using Java code. Events are emitted from a Java EE servlet using the JCICS Event API, equivalent to an `EXEC CICS SIGNAL EVENT` call. This event is processed by CICS event processing and is handled by an event processing adapter. This adapter is configured to call the CICS program `EVNTCONS` when an event is received.
+
+The CICS program `EVNTCONS` is a Java EE program designed to consume CICS events and, in this basic sample, log that an event was received to STDOUT.
+
 ## Requirements
 
 * CICS TS V5.3 or later
@@ -12,7 +18,7 @@ This Java web application demonstrates how to emit and consume CICS events in Ja
 
 ## Structure
 
-The project consists of two Maven modules:
+The project consists of two parts:
 
 1. cics-eventprocessing-java-webapp - the Java source code for this example
 2. cics-eventprocessing-java-bundle - the bundle definition for this example
