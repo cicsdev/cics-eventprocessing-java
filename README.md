@@ -95,7 +95,7 @@ A message will be written to the Liberty `messages.log` file to confirm the appl
 
 ## Running
 
-1. Use a browser to target the address http://my.zos:9080/cics-eventprocessing-java-webapp/emit?event=EVENT replacing `my.zos` with the hostname of your z/OS system and `9080` with the port the Liberty JVM server is listening on.
+1. Use a browser to target the address http://my.zos:9080/cics-eventprocessing-java-webapp/emit?event=ACCOUNT replacing `my.zos` with the hostname of your z/OS system and `9080` with the port the Liberty JVM server is listening on.
 2. View the JVM server CURRENT.STDOUT file, this should contain two log messages
    * Emitted event
    * Consumed event
