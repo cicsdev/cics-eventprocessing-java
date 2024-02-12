@@ -36,9 +36,9 @@ The code is built into a WAR file, packaged into a CICS bundle, and deployed to 
 
 The CICS bundle contains the following elements:
 
-1. [`EVNT.transaction`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/EVNT.transaction) - transaction which targets the `EVNTCONS` program
-2. [`ACCOUNTADAPTER.epadapter`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event processing adapter which starts the `EVNT` transaction
-3. [`ACCOUNT.evbind`](./cics-eventprocessing-java/cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event binding which targets the `EVENTADAPTER` adpater
+1. [`EVNT.transaction`](./cics-eventprocessing-java-bundle/src/main/bundleParts/EVNT.transaction) - transaction which targets the `EVNTCONS` program
+2. [`ACCOUNTADAPTER.epadapter`](./cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event processing adapter which starts the `EVNT` transaction
+3. [`ACCOUNT.evbind`](./cics-eventprocessing-java-bundle/src/main/bundleParts/ACCOUNTADAPTER.epadapter) - event binding which targets the `EVENTADAPTER` adpater
 4. `WARBUNDLE` - Java WAR bundle is added when built
 
 ## Building
