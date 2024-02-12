@@ -11,7 +11,7 @@ The CICS program `EVNTCONS` is a Java EE program designed to consume CICS events
 
 ## Requirements
 
-* CICS TS V5.3 or later
+* CICS TS V5.5 or later
 * A configured Liberty JVM server
 * Java SE 1.8 or later on the workstation
 * Either Gradle or Apache Maven on the workstation (optional if using Wrappers)
