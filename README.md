@@ -1,4 +1,5 @@
 # cics-eventprocessing-java
+[![Build](https://github.com/SoftlySplinter/cics-eventprocessing-java/actions/workflows/java.yaml/badge.svg)](https://github.com/SoftlySplinter/cics-eventprocessing-java/actions/workflows/java.yaml)
 
 This Java web application demonstrates how to emit and consume CICS events in Java using the JCICS API.
 
