@@ -10,27 +10,26 @@
 
 	<name>cics-eventprocessing-java</name>
 
-  <properties>
-	<java.version>1.8</java.version>
-	
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-  </properties>
-  
-  <build>
-      <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>com.ibm.cics</groupId>
-          <artifactId>cics-bundle-maven-plugin</artifactId>
-          <version>1.0.3</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
-  
-  
+	<properties>
+		<java.version>1.8</java.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.ibm.cics</groupId>
+					<artifactId>cics-bundle-maven-plugin</artifactId>
+					<version>1.0.3</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 
 	<!-- CICS TS V5.5 BOM (as of May 2020) -->
 	<dependencyManagement>
@@ -44,10 +43,10 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-  
-  <url>https://github.com/cicsdev/cics-eventprocessing-java</url>
-  <modules>
-  	<module>cics-eventprocessing-java-webapp</module>
-  	<module>cics-eventprocessing-java-bundle</module>
-  </modules>
+
+	<url>https://github.com/cicsdev/cics-eventprocessing-java</url>
+	<modules>
+		<module>cics-eventprocessing-java-webapp</module>
+		<module>cics-eventprocessing-java-bundle</module>
+	</modules>
 </project>
