@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>cics-eventprocessing-java-code</artifactId>
+			<artifactId>cics-eventprocessing-java-webapp</artifactId>
 			<version>${project.version}</version>
 			<type>war</type>
 		</dependency>
