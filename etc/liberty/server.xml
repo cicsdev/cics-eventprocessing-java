@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server name="CICS event processing Liberty JVM server template configuration">
+    <!-- Enable features -->
+    <featureManager>
+        <feature>cicsts:core-1.0</feature>
+        <feature>cicsts:link-1.0</feature>
+        <feature>servlet-3.1</feature>
+    </featureManager>
+
+    <!-- Default HTTP End Point -->
+    <httpEndpoint id="defaultHttpEndpoint" host="*" httpPort="9080" />
+
+    <!-- Reduce z/FS overheads by reducing config and app polling -->
+    <config monitorInterval="5s" updateTrigger="polled" />
+    <applicationMonitor updateTrigger="disabled" dropins="dropins"
+        dropinsEnabled="false" pollingRate="5s" />
+</server>

@@ -1,9 +1,5 @@
 name: Build
 
-defaults:
-  run:
-    working-directory: ./cics-eventprocessing-java
-
 on:
   push:
     branches: ["main"]

@@ -27,8 +27,8 @@ The project consists of two parts:
 
 There are two Java classes:
 
-1. [`EventEmitter.java`](./cics-eventprocessing-java/cics-eventprocessing-java-webapp/src/main/java/com/ibm/cicsdev/eventprocessing/EventEmitter.java) - a servlet that emits CICS events
-2. [`EventConsumer.java`](./cics-eventprocessing-java/cics-eventprocessing-java-webapp/src/main/java/com/ibm/cicsdev/eventprocessing/EventConsumer.java) - the Java code to define the CICS program resource `EVNTCONS` and consume the CICS events
+1. [`EventEmitter.java`](./cics-eventprocessing-java-webapp/src/main/java/com/ibm/cicsdev/eventprocessing/EventEmitter.java) - a servlet that emits CICS events
+2. [`EventConsumer.java`](./cics-eventprocessing-java-webapp/src/main/java/com/ibm/cicsdev/eventprocessing/EventConsumer.java) - the Java code to define the CICS program resource `EVNTCONS` and consume the CICS events
 
 The code is built into a WAR file, packaged into a CICS bundle, and deployed to a Liberty JVM server as a web application.
 
@@ -47,8 +47,6 @@ There are several ways to build this project. We suggest you build with a build 
 
 ### Building with Gradle
 
-Run the following command from the `cics-eventprocessing-java` directory:
-
 ```sh
 ./gradlew assemble
 ```
@@ -56,8 +54,6 @@ Run the following command from the `cics-eventprocessing-java` directory:
 This will compile the Java code, build a WAR file and package it and the EP adapter and Event binding into a CICS bundle as a ZIP file at `./cics-eventprocessing-java-bundle/build/distributions/cics-eventprocessing-java-bundle-0.0.1-SNAPSHOT.zip`
 
 ### Building with Maven
-
-Run the following command from the `cics-eventprocessing-java` directory:
 
 ```sh
 ./mvnw verify
@@ -82,6 +78,8 @@ The Liberty JVM server will need the following features installed at a minimum: 
   <!-- More configuration -->
 </server>
 ```
+
+A template `server.xml` is provided [here](./etc/liberty/server.xml).
 
 ## Deploying
 

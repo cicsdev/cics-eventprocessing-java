@@ -1,4 +1,0 @@
-
-rootProject.name = 'cics-eventprocessing-java'
-include(':cics-eventprocessing-java-webapp')
-include(':cics-eventprocessing-java-bundle')
