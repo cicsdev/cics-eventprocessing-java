@@ -1,0 +1,7 @@
+# CODEOWNERS - Defines maintainers for this CICS sample
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# Last reviewed: 2025-12
+
+# Sample Maintainers
+# Add the GitHub usernames of maintainers for this CICS sample below
+* @SoftlySplinter @adamcoulthard
